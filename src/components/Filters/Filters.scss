@@ -8,7 +8,6 @@
 
   width: 100%;
   text-align: center;
-  border-bottom: #CA8787 1px solid;
   
   &__title {
     padding: 0.5rem;
@@ -20,9 +19,11 @@
     display: flex;
     display: row;
     justify-content: flex-start;
-    width: 100%;
+    // width: 100%;
     flex-wrap: wrap;
     gap: 0.2rem;
+    background-color: #f7ebeb ;
+    padding: 1rem;
   }
 
   &__item {
