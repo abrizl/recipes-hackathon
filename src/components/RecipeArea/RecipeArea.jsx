@@ -1,5 +1,5 @@
 import "./RecipeArea.scss"
-import {getRandomMeal} from "/src/scripts/api.js";
+import {searchMealByFirstLetter} from "/src/scripts/api.js";
 import { useState, useEffect } from 'react';
 import RecipeCard from "/src/components/RecipeCard/RecipeCard.jsx";
 
@@ -7,25 +7,24 @@ function RecipeArea (props) {
     const [meals, setMeal] = useState([]);
     const [isLoading, setLoading] = useState(true);
 
-    useEffect(()=> {
+    useEffect(() => {
         const fetchMeals = async () => {
-            try{
+            try {
                 const fetchedMeals = [];
-                //TODO: more meals
-                const response = await getRandomMeal();
-                fetchedMeals.push(response);
+                const response = await searchMealByFirstLetter('a');
+                response.meals.forEach(element => {
+                    fetchedMeals.push(element);
+                });
                 
                 setMeal(fetchedMeals);
-            }
-            catch(error){
+            } catch (error) {
                 console.log(error);
-            }
-            finally{
+            } finally {
                 setLoading(false);
             }
         };
         fetchMeals();
-    },[]);
+    }, []);
     
     if(isLoading){
         return <div>Loading</div>
@@ -34,15 +33,15 @@ function RecipeArea (props) {
     return (
         
         <section className="recipe-area">
-            <ul>
-                {meals.map((meal =>{
-                    return(
-                        <RecipeCard key={meals.idMeal} meal={meals}/>
-                    );
-                }))}
-            </ul>
-                
-        </section>
+        <ul>
+            {meals.map((meal) => {
+                console.log("map: ", meal);
+                return (
+                    <RecipeCard key={meal.idMeal} meal={meal} />
+                );
+            })}
+        </ul>
+    </section>
         
     );
 }
