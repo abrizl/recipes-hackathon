@@ -6,7 +6,7 @@ function RecipeCard ({meal}) {
             <section className="recipe-card">
                 <div className="recipe-card__data">
                     <div className="recipe-card__top">
-                        <div className="recipe-card__image"></div>
+                        <img src={meal.strMealThumb} alt="food image" className="recipe-card__image" />
                         <div className="recipe-card__information">
                         <p className="recipe_card__title">{meal.strMeal}</p>
                         <P className="recipe-card__origin">{meal.strArea}</P>
