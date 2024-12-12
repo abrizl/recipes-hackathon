@@ -2,6 +2,7 @@ import "./RecipeCardDetailed.scss";
 
 
 function RecipeCardDetailed ({meal}) {
+    console.log("meal:",meal);
     return (
         <>
             <section className="recipe-card">

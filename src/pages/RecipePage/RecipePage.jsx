@@ -2,7 +2,7 @@ import "./RecipePage.scss";
 import {useParams, Navigate} from "react-router-dom";
 import {useState, useEffect} from "react";
 import {getDetailsByID} from "/src/scripts/api.js";
-import RecipeCardDetailed from "/src/components/RecipeCardDetailed/RecipeCard.jsx";
+import RecipeCardDetailed from "/src/components/RecipeCardDetailed/RecipeCardDetailed.jsx";
 
 
 function RecipePage () {
