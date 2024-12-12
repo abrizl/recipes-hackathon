@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useState, useEffect} from 'react'
 import './App.css'
 import {BrowserRouter, Routes, Route} from 'react-router-dom';
 import axios from 'axios';
@@ -9,7 +9,7 @@ import RecipePage from './pages/RecipePage/RecipePage';
 
 
 function App() {
-  const [count, setCount] = useState(0)
+  // const [count, setCount] = useState(0)
 
   return (
     <>
