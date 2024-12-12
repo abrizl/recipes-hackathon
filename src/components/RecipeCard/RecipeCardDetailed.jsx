@@ -1,7 +1,7 @@
-import "./RecipeCard.scss";
+import "./RecipeCardDetailed.scss";
 
 
-function RecipeCard ({meal}) {
+function RecipeCardDetailed ({meal}) {
     return (
         <>
             <section className="recipe-card">
@@ -13,10 +13,11 @@ function RecipeCard ({meal}) {
                         <p className="recipe-card__origin">{meal.strArea}</p>
                         </div>
                     </div>
+                    <div className="recipe-card__recipe">{meal.strInstructions}</div>
                 </div>
             </section>
         </>
     );
 }
 
-export default RecipeCard;
+export default RecipeCardDetailed;

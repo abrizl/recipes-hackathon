@@ -1,7 +1,7 @@
-import "./RecipeCard.scss";
+import "./RecipeCardDetailed.scss";
 
 
-function RecipeCard ({meal}) {
+function RecipeCardDetailed ({meal}) {
     return (
         <>
             <section className="recipe-card">
@@ -19,4 +19,4 @@ function RecipeCard ({meal}) {
     );
 }
 
-export default RecipeCard;
+export default RecipeCardDetailed;

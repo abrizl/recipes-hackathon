@@ -2,7 +2,7 @@ import "./RecipePage.scss";
 import {useParams, Navigate} from "react-router-dom";
 import {useState, useEffect} from "react";
 import {getDetailsByID} from "/src/scripts/api.js";
-import RecipeCard from "/src/components/RecipeCard/RecipeCard.jsx";
+import RecipeCardDetailed from "/src/components/RecipeCardDetailed/RecipeCard.jsx";
 
 
 function RecipePage () {
@@ -37,7 +37,7 @@ function RecipePage () {
 
     return (
         <>
-            <RecipeCard key={meal.meals[0].idMeal} meal={meal.meals[0]}/>
+            <RecipeCardDetailed key={meal.meals[0].idMeal} meal={meal.meals[0]}/>
         </>
     );
 }
