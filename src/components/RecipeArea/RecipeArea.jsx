@@ -1,5 +1,5 @@
 import "./RecipeArea.scss";
-import { filterMealByCategory, searchMealByFirstLetter } from "/src/scripts/api.js"; // Assuming this API exists
+import { filterMealByCategory, searchMealByFirstLetter } from "/src/scripts/api.js";
 import { useState, useEffect } from 'react';
 import RecipeCard from "/src/components/RecipeCard/RecipeCard.jsx";
 import { Link } from "react-router-dom";
