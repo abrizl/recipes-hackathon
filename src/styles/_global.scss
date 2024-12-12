@@ -3,6 +3,7 @@ head, body {
     font-weight: 400;
 }
 
-* {
-    font-family: inherit; /* Ensures all child elements inherit the font */
-  }
+
+html {
+    font: 16px; //set base font
+}
