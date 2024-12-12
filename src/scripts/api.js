@@ -7,6 +7,17 @@ const themealdb = axios.create({
 	},
 });
 
+themealdb.interceptors.request.use(
+	(config)=>{
+		if(config.url){
+			config.url=`${config.url}`
+		}
+		return config;
+	},
+	(error)=>{
+		return Promise.reject(error);
+	}
+)
 
 
 themealdb.interceptors.response.use(

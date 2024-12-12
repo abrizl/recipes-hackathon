@@ -1,7 +1,7 @@
 import "./RecipeArea.scss"
-import {getDetailsByID} from "/src/scripts/api.js";
+import {getRandomMeal} from "/src/scripts/api.js";
 import { useState, useEffect } from 'react';
-import {RecipeCard} from "/src/components/RecipeCard/RecipeCard.jsx";
+import RecipeCard from "/src/components/RecipeCard/RecipeCard.jsx";
 
 function RecipeArea (props) {
     const [meals, setMeal] = useState([]);
@@ -11,11 +11,10 @@ function RecipeArea (props) {
         const fetchMeals = async () => {
             try{
                 const fetchedMeals = [];
-                for(let i=0; i<10;i++){
-                    const response = await getDetailsByID(i);
-                    console.log(response);
-                    fetchedMeals.push(response);
-                }
+                //TODO: more meals
+                const response = await getRandomMeal();
+                fetchedMeals.push(response);
+                
                 setMeal(fetchedMeals);
             }
             catch(error){
@@ -35,7 +34,14 @@ function RecipeArea (props) {
     return (
         
         <section className="recipe-area">
-            <RecipeCard key={meals.idMeal} meal={meals}/>
+            <ul>
+                {meals.map((meal =>{
+                    return(
+                        <RecipeCard key={meals.idMeal} meal={meals}/>
+                    );
+                }))}
+            </ul>
+                
         </section>
         
     );
