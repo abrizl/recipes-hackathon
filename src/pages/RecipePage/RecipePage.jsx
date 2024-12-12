@@ -32,7 +32,7 @@ function RecipePage () {
 
     return (
         <>
-            <RecipeCard key= {meal.idMeal} meal={meal}/>
+            <RecipeCard key={meal.idMeal} meal={meal}/>
         </>
     );
 }

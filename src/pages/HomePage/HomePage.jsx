@@ -5,10 +5,9 @@ function HomePage () {
     return (
         <>
         <Header/>
-        <Filter/>
+        {/* <Filter/> */}
         <RecipeArea/>
         </>
     );
 }
-
 export default HomePage;
