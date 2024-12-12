@@ -1,7 +1,7 @@
 import "./RecipeCard.scss";
 
+
 function RecipeCard ({meal}) {
-    console.log("recipe cards: ", meal);
     return (
         <>
             <section className="recipe-card">

@@ -2,6 +2,8 @@ import "./RecipeArea.scss"
 import {searchMealByFirstLetter} from "/src/scripts/api.js";
 import { useState, useEffect } from 'react';
 import RecipeCard from "/src/components/RecipeCard/RecipeCard.jsx";
+import {Link} from "react-router-dom";
+
 
 function RecipeArea (props) {
     const [meals, setMeal] = useState([]);
@@ -35,9 +37,10 @@ function RecipeArea (props) {
         <section className="recipe-area">
         <ul>
             {meals.map((meal) => {
-                console.log("map: ", meal);
                 return (
-                    <RecipeCard key={meal.idMeal} meal={meal} />
+                    <Link key={meal.idMeal} to={`/recipes/${meal.idMeal}`}>
+                        <RecipeCard key={meal.idMeal} meal={meal} />
+                    </Link>
                 );
             })}
         </ul>
