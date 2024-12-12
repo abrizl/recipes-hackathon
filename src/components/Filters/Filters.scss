@@ -5,7 +5,6 @@
   font-family: 'Poppins', sans-serif !important;
 
 
-  background-color: FFD0D0;
   width: 100%;
   text-align: center;
   border-bottom: #CA8787 1px solid;
@@ -13,6 +12,7 @@
   &__title {
     padding: 0.5rem;
     color: #CA8787;
+    font-weight: 300;
   }
   &__list {
     list-style: none;

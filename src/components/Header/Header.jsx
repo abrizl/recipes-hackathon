@@ -5,7 +5,7 @@ function Header () {
     return (
         <>
             <nav className="header">
-                <Link to="/" className="header__item">RecipesWebsite</Link>
+                <Link to="/" className="header__item">quick & cozy receipes</Link>
                 <Link to="/" className="header__item">Home</Link>
             </nav>
         </>

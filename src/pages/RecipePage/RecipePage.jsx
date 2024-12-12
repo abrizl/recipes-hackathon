@@ -3,7 +3,7 @@ import {useParams, Navigate} from "react-router-dom";
 import {useState, useEffect} from "react";
 import {getDetailsByID} from "/src/scripts/api.js";
 import RecipeCardDetailed from "/src/components/RecipeCardDetailed/RecipeCardDetailed.jsx";
-
+import Header from "../../components/Header/Header";
 
 function RecipePage () {
 
@@ -37,6 +37,7 @@ function RecipePage () {
 
     return (
         <>
+            <Header/>
             <RecipeCardDetailed key={meal.meals[0].idMeal} meal={meal.meals[0]}/>
         </>
     );
