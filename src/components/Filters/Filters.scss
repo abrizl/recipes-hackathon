@@ -1,8 +1,38 @@
-.filters {
-  background-color: #d6c0b3;
-  border: red solid 2px;
-
+.filters2 {
+  background-color: #AB886D;
+  width: 100%;
+  text-align: center;
+  border: black 2px solid;
+  border-width: 2px 0 2px 0;
   &__title {
-    color: blue;
+    padding: 0.5rem;
+    color: #493628;
   }
+  &__list {
+    list-style: none;
+    display: flex;
+    display: row;
+    width: 100%;
+    flex-wrap: wrap;
+  }
+  &__item {
+    border: black 0.09rem solid;
+    border-radius: 1rem;
+    padding: 0.1rem 0.4rem;
+    background-color: #D6C0B3;
+    color: #493628;
+    margin: 0.25rem 0.5rem 0.25rem 0;
+    list-style: none;
+    font-family: non;
+    // width: 5rem;
+    &:hover {
+      background-color: #493628;
+      color: white;
+      cursor: pointer;
+    }
+  }
+}
+.filters2__item--active {
+  background-color: #493628;
+  color: white;
 }
