@@ -1,5 +1,7 @@
+@use '../../styles/global' as *;
 
 .header {
+
     padding: 1rem;
     display: flex;
     justify-content: space-between;
