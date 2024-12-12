@@ -3,7 +3,7 @@ import "./Filters.scss";
 function Filters() {
   return (
     <section className="filters2">
-      <h2 className="filters2__title">Filters</h2>
+      <h2 className="filters2__title">choose a category</h2>
       <ul className="filters2__list">
         <li className="filters2__item">Chicken</li>
         <li className="filters2__item">Beef</li>

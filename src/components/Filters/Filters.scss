@@ -1,12 +1,18 @@
+@use '../../styles/global' as *;
+
 .filters2 {
-  background-color: #AB886D;
+
+  font-family: 'Poppins', sans-serif !important;
+
+
+  background-color: FFD0D0;
   width: 100%;
   text-align: center;
-  border: black 2px solid;
-  border-width: 2px 0 2px 0;
+  border-bottom: #CA8787 1px solid;
+  
   &__title {
     padding: 0.5rem;
-    color: #493628;
+    color: #CA8787;
   }
   &__list {
     list-style: none;
@@ -14,25 +20,30 @@
     display: row;
     width: 100%;
     flex-wrap: wrap;
+    gap: 0.2rem;
   }
+
   &__item {
-    border: black 0.09rem solid;
+    
+    border: #CA8787 0.09rem solid;
     border-radius: 1rem;
-    padding: 0.1rem 0.4rem;
-    background-color: #D6C0B3;
+    padding: 0.5rem 1rem;
+    background-color: #E1ACAC;
     color: #493628;
     margin: 0.25rem 0.5rem 0.25rem 0;
     list-style: none;
     font-family: non;
     // width: 5rem;
     &:hover {
-      background-color: #493628;
+      background-color: #A87676;
+      border: #A87676 ;
       color: white;
       cursor: pointer;
     }
   }
 }
 .filters2__item--active {
-  background-color: #493628;
-  color: white;
+  background-color: #A87676;
+      border: #A87676 ;
+      color: white;
 }
