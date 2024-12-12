@@ -1,0 +1,19 @@
+
+.recipe-card {
+    padding: 1rem;
+    
+    &__data {
+        display: flex;
+        flex-direction: column;
+        
+    }
+
+    &__top {
+        display: flex;
+        flex-direction: row;
+    }
+
+    &__image {
+        border-radius: 50%;
+    }
+}
