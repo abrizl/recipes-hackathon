@@ -9,8 +9,8 @@ function RecipeCard ({meal}) {
                     <div className="recipe-card__top">
                         <img src={meal.strMealThumb} alt="food image" className="recipe-card__image" />
                         <div className="recipe-card__information">
-                        <p className="recipe-card__title">{meal.strMeal}</p>
-                        <p className="recipe-card__origin">{meal.strArea}</p>
+                            <p className="recipe-card__title">{meal.strMeal}</p>
+                            <p className="recipe-card__origin">Origin: {meal.strArea}</p>
                         </div>
                     </div>
                     <div className="recipe-card__recipe">{meal.strInstructions}</div>
