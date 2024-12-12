@@ -10,7 +10,7 @@ function RecipeCardDetailed ({meal}) {
         <div className="recipe-card__top">
         <img src={meal.strMealThumb} alt="food image" className="recipe-card__image" />
         <div className="recipe-card__information">
-        <p className="recipe_card__title">{meal.strMeal}</p>
+        <p className="recipe-card__title">{meal.strMeal}</p>
         <p className="recipe-card__origin">{meal.strArea}</p>
         </div>
         </div>
