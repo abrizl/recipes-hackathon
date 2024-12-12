@@ -1,10 +1,10 @@
 import "./RecipeArea.scss"
 import {getDetailsByID} from "/src/scripts/api.js";
 import { useState, useEffect } from 'react';
-
+import {RecipeCard} from "/src/components/RecipeCard/RecipeCard.jsx";
 
 function RecipeArea (props) {
-    const [meals, setMeal] = useState(null);
+    const [meals, setMeal] = useState([]);
     const [isLoading, setLoading] = useState(true);
 
     useEffect(()=> {
@@ -24,7 +24,8 @@ function RecipeArea (props) {
             finally{
                 setLoading(false);
             }
-        }
+        };
+        fetchMeals();
     },[]);
     
     if(isLoading){
