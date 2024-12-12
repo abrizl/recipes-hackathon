@@ -1,12 +1,12 @@
 import "./RecipeArea.scss"
 
-function RecipeArea () {
+function RecipeArea (props) {
     return (
-        <>
-            <section className="recipe-area">
-                <p className=""> hello</p>
-            </section>
-        </>
+        
+        <section className="recipe-area">
+            <p className=""> hello</p>
+        </section>
+        
     );
 }
 

@@ -23,8 +23,8 @@ function App() {
         <Filters />
 
         <Routes>
-          <Route path="/" element={<HomePage />} />
-          <Route path="/recipes" element={<RecipePage />} />
+          <Route path="/" element={<HomePage/>}/>
+          <Route path="/recipes/:recipeId" element={<RecipePage/>}/> 
         </Routes>
       </BrowserRouter>
     </>
