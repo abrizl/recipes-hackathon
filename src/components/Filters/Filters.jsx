@@ -1,4 +1,4 @@
-import ".Filters.scss";
+import "./Filters.scss";
 
 function Filters() {
   return (
