@@ -1,0 +1,53 @@
+@use '../../styles/global' as *;
+
+.recipe-card {
+    padding: 1rem;
+    
+    &__data {
+        display: flex;
+        flex-direction: column;
+        
+    }
+
+    &__top {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__image {
+        border-radius: 50%;
+        width: 20rem;
+        height: 20rem;
+        border: 1px solid #CA8787 ;
+        align-self: center;
+    }
+
+    &__information {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        border-bottom: 1px solid #CA8787;
+        
+    }
+
+    &__title {
+        font-size: 2rem;
+        color: #CA8787;
+        margin-bottom: 0;
+        
+    }
+
+    &__origin {
+        font-size: 1.5rem;
+        color: #CA8787;
+        
+    }
+
+    &__information {
+        font-size: 1.5rem;
+        color: #CA8787;
+    }
+
+    
+}

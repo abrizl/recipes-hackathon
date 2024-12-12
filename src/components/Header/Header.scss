@@ -1,0 +1,17 @@
+@use '../../styles/global' as *;
+
+.header {
+
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #CA8787;
+
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &__item {
+        text-decoration: none;
+    }
+}

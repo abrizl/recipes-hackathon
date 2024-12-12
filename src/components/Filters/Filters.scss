@@ -1,0 +1,51 @@
+@use '../../styles/global' as *;
+
+.filters2 {
+
+  font-family: 'Poppins', sans-serif !important;
+  padding: 1rem;
+
+
+  width: 100%;
+  text-align: center;
+  
+  &__title {
+    padding: 0.5rem;
+    color: #CA8787;
+    font-weight: 300;
+  }
+  &__list {
+    list-style: none;
+    display: flex;
+    display: row;
+    justify-content: flex-start;
+    // width: 100%;
+    flex-wrap: wrap;
+    gap: 0.2rem;
+    background-color: #f7ebeb ;
+    padding: 1rem;
+  }
+
+  &__item {
+    
+    border: #CA8787 0.09rem solid;
+    border-radius: 1rem;
+    padding: 0.5rem 1rem;
+    background-color: #FFD0D0;
+    color: #A87676;
+    margin: 0.25rem 0.5rem 0.25rem 0;
+    list-style: none;
+    // width: 5rem;
+    &:hover {
+      background-color: #A87676;
+      border: #A87676 ;
+      color: white;
+      cursor: pointer;
+    }
+  }
+}
+.filters2__item--active {
+  background-color: #A87676;
+      border: #A87676 ;
+      color: white;
+}
